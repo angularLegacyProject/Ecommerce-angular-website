@@ -1,0 +1,28 @@
+<form action="" id="login-form">
+  <h1>Update Product</h1>
+
+  <img width="467px" height="400px" [src]="imageUrl" alt="" />
+
+  <div class="input-box">
+    <input type="text" (keyup)="getProductName($event)" />
+    <span data-placeholder="product name"></span>
+  </div>
+
+  <div class="input-box">
+    <input type="number" (keyup)="getPrice($event)" />
+    <span data-placeholder="price"></span>
+  </div>
+
+  <div class="input-box">
+    <input type="text" (keyup)="getDescription($event)" />
+    <span data-placeholder="description"></span>
+  </div>
+
+  <!-- <label> <input type="checkbox" name="remember" /> Remember me </label> -->
+
+  <button (click)="updateProduct()" type="submit" class="login-btn">
+    Update
+  </button>
+
+  <div class="bottom-links"></div>
+</form>

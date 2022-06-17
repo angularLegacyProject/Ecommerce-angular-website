@@ -1,0 +1,224 @@
+<nav class="navbar navbar-expand-md navbar-light">
+  <a class="navbar-brand" href="/home">
+    <img
+      src="assets/img/go_shop.png"
+      class="img-fluid"
+      width="100"
+      height="40"
+      class="d-inline-block align-top"
+      alt="GoSHOP"
+    />
+  </a>
+
+  <!-- FOR TOGGLE BUTTON -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    (click)="toggleCollapsed()"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="container-fluid">
+    <!-- <div class="row m-0 p-0"> -->
+
+    <div class="col-lg-8">
+      <form class="form-inline text-center">
+        <div
+          class="input-group collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <a routerLink="/products">
+            <button
+              class="btn btn-outline-dark"
+              type="button"
+              id="button-addon2"
+            >
+              <i class="fa fa-search"></i>
+            </button>
+          </a>
+          <!-- <input type="text" class="form-control search_input" type="search" placeholder="Search" aria-label="Search Field" aria-describedby="button-addon2">
+                 -->
+        </div>
+      </form>
+    </div>
+
+    <!-- data-toggle="modal" data-target="#LoginModal" (click)="open()" -->
+
+    <!-- </div> -->
+    <!-- <a class="navbar-brand ml-sm-5" href="#">BUY iT</a> -->
+  </div>
+</nav>
+
+<!-- Category BAR -->
+<div class="navbar1">
+  <a routerLink="/admin">Home</a>
+
+  <!-- Electronics -->
+  <div class="dropdown1">
+    <button class="dropbtn">
+      Electronics
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content1">
+      <div class="container-fluid">
+        <div class="row header">
+          <div class="col">
+            <a class="category" target="_blank"><h2>Electronics</h2></a>
+          </div>
+        </div>
+
+        <div class="row last_row">
+          <div class="col-sm-6 links">
+            <a routerLink="/admin/mobiles"><h3>Mobiles</h3></a>
+            <li href="#">Apple-Samsung-</li>
+            <li href="#">Samsung</li>
+            <li href="#">Mi</li>
+            <li href="#">Honor</li>
+          </div>
+
+          <div class="col-sm-6 links">
+            <a routerLink="/admin/computer"><h3>Computer</h3></a>
+            <a href="#">External Hard Disks</a>
+            <a href="#">Mouse</a>
+            <a href="#">Laptop Bags</a>
+            <a href="#">Pendrives</a>
+          </div>
+
+          <div class="col-sm-6 links">
+            <img
+              src="https://thumbs.dreamstime.com/b/collection-modern-touchscreen-smartphones-creative-abstract-mobile-phone-wireless-communication-technology-mobility-44433245.jpg"
+              alt="img cloth"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-sm-6 links">
+            <img
+              src="https://www.makuratech.com/image/cache/catalog/HP%20EliteBook%20840%20G5%20i5-500x500.jpg"
+              alt="img cloth"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Home & furniture -->
+  <div class="dropdown1">
+    <button class="dropbtn">
+      Home & Furniture
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content1">
+      <div class="container-fluid">
+        <div class="row header">
+          <div class="col">
+            <a class="category" target="_blank"><h2>Home & Furniture</h2></a>
+          </div>
+        </div>
+
+        <div class="row last_row">
+          <div class="col-sm-6 links">
+            <a routerLink="/admin/furniture"> <h3>Furniture</h3></a>
+            <li href="#">Bedsheets</li>
+            <li href="#">Curtains</li>
+            <li href="#">Cushion & Pillow Covers</li>
+            <li href="#">Kitchen & Dining Linen</li>
+          </div>
+          <div class="col-sm-6 links">
+            <a routerLink="/admin/homeAndDecor"><h3>Home Decor</h3></a>
+            <li href="#">Paintings</li>
+            <li href="#">Clocks</li>
+            <li href="#">Wall Shelves</li>
+            <li href="#">Wall Decals</li>
+          </div>
+
+          <div class="col-sm-6 links">
+            <img
+              src="https://media.architecturaldigest.com/photos/5f46b2dde73e57ccfed67771/master/w_1600%2Cc_limit/shop_website_1-024_FINAL_w.jpg"
+              alt="img cloth"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-sm-6 links">
+            <img
+              src="https://trend-home.fr/fre_pl_Meubles-de-salon-table-basse-Juliette-et-meuble-TV-Romeo-blanc-mat-804_2.jpg"
+              alt="img cloth"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dropdown1">
+    <button class="dropbtn">
+      Watches
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content1">
+      <div class="container-fluid">
+        <div class="row header">
+          <div class="col">
+            <a class="category"><h2>Watches</h2></a>
+          </div>
+        </div>
+
+        <div class="row last_row">
+          <div class="col-sm-6 links">
+            <a routerLink="/admin/menWatches"><h3>Men Watches</h3></a>
+            <li href="#">MI</li>
+            <li href="#">sony</li>
+            <li href="#">LG</li>
+            <li href="#">Samsung</li>
+          </div>
+          <div class="col-sm-6 links">
+            <a routerLink="/admin/womenWatches"><h3>Women Watches</h3></a>
+            <li href="#">Fully Automatic Front Load</li>
+            <li href="#">Semi Automatic Top Load</li>
+            <li href="#">Fully Automatic Top Load</li>
+            <li href="#">Brands:-LG,IFB,Midea</li>
+          </div>
+
+          <div class="col-sm-6 links">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/581b5c19e3df28f244eaf150/1640865264799-0L4Z1XZRFNXOQV7WEGBH/Vivienne-Westwood-Wallace-Gold-Tone-Ladies-Watch-VV208GDGD-37-mm-Green-Dial.jpeg"
+              alt="img cloth"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-sm-6 links">
+            <img
+              src="https://media.istockphoto.com/photos/luxury-watch-isolated-on-white-background-with-clipping-path-gold-picture-id1068843992?k=20&m=1068843992&s=612x612&w=0&h=Kxvb5Zrtm4X_QdVeAfxMP72wmPYUeTFIxtCu4_C0lVA="
+              alt="img cloth"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="logout" class="dropdown1">
+    <button routerLink="/admin/allOrdres" class="dropbtn">
+      See_Ordres
+      <i class="fa fa-caret-down"></i>
+    </button>
+  </div>
+  <div class="dropdown1">
+    <a routerLink="/admin/addProduct" class="dropbtn">
+      Add_Product
+      <i class="fa fa-caret-down"></i>
+    </a>
+  </div>
+  <div class="dropdown1">
+    <button class="dropbtn">
+      Logout
+      <i class="fa fa-caret-down"></i>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<form action="" id="login-form">
+  <h1>Create product</h1>
+  <div class="input-box">
+    <input type="text" (keyup)="getProductName($event)" />
+    <span data-placeholder="product name"></span>
+  </div>
+
+  <div class="input-box">
+    <input type="text" (keyup)="getCategory($event)" />
+    <span data-placeholder="category"></span>
+  </div>
+  <div class="input-box">
+    <input type="text" (keyup)="getSousCategory($event)" />
+    <span data-placeholder="s_category"></span>
+  </div>
+  <div class="input-box">
+    <input type="number" (keyup)="getPrice($event)" />
+    <span data-placeholder="price"></span>
+  </div>
+  <div class="input-box">
+    <input type="text" (keyup)="getImageUrl($event)" />
+    <span data-placeholder="image Url"></span>
+  </div>
+  <div class="input-box">
+    <input type="text" (keyup)="getDescription($event)" />
+    <span data-placeholder="description"></span>
+  </div>
+
+  <!-- <label> <input type="checkbox" name="remember" /> Remember me </label> -->
+
+  <button (click)="createProduct()" type="submit" class="login-btn">
+    Add product
+  </button>
+
+  <div class="bottom-links"></div>
+</form>

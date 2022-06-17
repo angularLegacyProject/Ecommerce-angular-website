@@ -1,0 +1,26 @@
+<div class="container mt-9">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <div *ngFor="let item of allComputer" class="card">
+            <div class="imgBox">
+              <img [src]="item.imageUrl" alt="mouse corsair" class="mouse" />
+            </div>
+  
+            <div class="contentBox">
+              <h3>{{ item.productName }}</h3>
+              <h2 class="price">{{ item.price }}</h2>
+              <button
+                class="buy"
+                routerLink="/admin/updateProduct/{{ item._id }}"
+              >
+                edit
+              </button>
+              <button (click)="deleteitem(item._id)" class="buy">delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,39 @@
+<app-nav-bar></app-nav-bar>
+<div class="container-fluid py-2 ad_cover">
+  <div class="container">
+    <div class="row">
+      <!-- Left Side -->
+      <div class="col-sm-6">
+        <div class="container">
+          <div class="imgBox">
+            <img
+              alt="main image"
+              class="img-thumbnail"
+              style="max-height: 450px"
+              src="{{ oneProd.imageUrl }}"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Right Side -->
+      <div class="col-sm-6">
+        <div class="product-description">
+          <h3>{{ oneProd.productName }}</h3>
+          <span class="name">{{ oneProd.description }}</span>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+          <!-- Product Color -->
+          <div class="product-configuration-title"></div>
+
+          <!-- Product Pricing -->
+          <div class="product-price pb-1">
+            <span> Price : {{ oneProd.price }} TND </span>
+          </div>
+          <button class="btn btn-success btn-lg">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
