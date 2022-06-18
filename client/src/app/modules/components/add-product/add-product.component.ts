@@ -15,7 +15,6 @@ export class AddProductComponent implements OnInit {
     imageUrl: '',
     description: '',
   };
-
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {}
