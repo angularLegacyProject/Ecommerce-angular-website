@@ -28,7 +28,11 @@ import { MWatchesComponent } from './m-watches/m-watches.component';
 import { WWatchesComponent } from './w-watches/w-watches.component';
 import { PhonesComponent } from './phones/phones.component';
 import { MobileComponent } from './modules/components/mobile/mobile.component';
-import { ProfileComponent } from './profile/profile.component';
+
+import { MyProfileComponent } from './my-profile/my-profile.component';
+
+
+
 
 // import { AuthInterceptor } from '../auth.interceptor'
 @NgModule({
@@ -55,7 +59,12 @@ import { ProfileComponent } from './profile/profile.component';
     WWatchesComponent,
     PhonesComponent,
     MobileComponent,
-    ProfileComponent,
+
+    MyProfileComponent,
+    
+
+   
+
   ],
   imports: [
     BrowserModule,
@@ -67,6 +76,7 @@ import { ProfileComponent } from './profile/profile.component';
 
     CommonModule,
     FormsModule,
+    
   ],
   providers: [
     // { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },

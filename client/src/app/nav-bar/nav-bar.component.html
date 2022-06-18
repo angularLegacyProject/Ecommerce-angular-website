@@ -125,11 +125,7 @@
       <div class="container-fluid">
         <div class="row header">
           <div class="col">
-            <a
-              class="category"
-              
-              ><h2>Electronics</h2></a
-            >
+            <a class="category"><h2>Electronics</h2></a>
           </div>
         </div>
 
@@ -178,10 +174,7 @@
       <div class="container-fluid">
         <div class="row header">
           <div class="col">
-            <a
-              class="category"
-              ><h2>Home & Furniture</h2></a
-            >
+            <a class="category"><h2>Home & Furniture</h2></a>
           </div>
         </div>
 
@@ -226,14 +219,7 @@
     </button>
     <div class="dropdown-content1">
       <div class="container-fluid">
-        <div class="row header">
-          <div class="col">
-            <a
-              class="category"
-              ><h2>Watches</h2></a
-            >
-          </div>
-        </div>
+        <div class="row header"></div>
 
         <div class="row last_row">
           <div class="col-sm-6 links">
@@ -268,5 +254,17 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="dropdown1">
+    <a routerLink="user/myprofile" class="dropbtn">
+      {{ username }}
+      <i class="fa fa-caret-down"></i>
+    </a>
+  </div>
+  <div class="dropdown1" *ngIf="this.userExist">
+    <a routerLink="" class="dropbtn" (click)="this.auth.logout()">
+      logout
+      <i class="fa fa-caret-down"></i>
+    </a>
   </div>
 </div>
