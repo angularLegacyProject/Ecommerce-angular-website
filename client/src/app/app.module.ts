@@ -28,7 +28,10 @@ import { MWatchesComponent } from './m-watches/m-watches.component';
 import { WWatchesComponent } from './w-watches/w-watches.component';
 import { PhonesComponent } from './phones/phones.component';
 import { MobileComponent } from './modules/components/mobile/mobile.component';
+
 import { MyProfileComponent } from './my-profile/my-profile.component';
+
+
 
 
 // import { AuthInterceptor } from '../auth.interceptor'
@@ -56,8 +59,12 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
     WWatchesComponent,
     PhonesComponent,
     MobileComponent,
+
     MyProfileComponent,
     
+
+   
+
   ],
   imports: [
     BrowserModule,

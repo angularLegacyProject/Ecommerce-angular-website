@@ -12,7 +12,10 @@ import { FurnitureAdComponent } from '../components/furniture-ad/furniture-ad.co
 import { DecorAdComponent } from '../components/decor-ad/decor-ad.component';
 import { MenWComponent } from '../components/men-w/men-w.component';
 import { WomenWComponent } from '../components/women-w/women-w.component';
-import { OrdresComponent } from '../components/ordres/ordres.component';
+import { AllOrdresComponent } from '../components/seeordres/all-ordres/all-ordres.component';
+import { OneOrdreComponent } from '../components/seeordres/one-ordre/one-ordre.component';
+import { OneProductComponent } from '../components/seeordres/one-product/one-product.component';
+import { QuntityComponent } from '../components/seeordres/quntity/quntity.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { OrdresComponent } from '../components/ordres/ordres.component';
     DecorAdComponent,
     MenWComponent,
     WomenWComponent,
-    OrdresComponent
+    AllOrdresComponent,
+    OneOrdreComponent,
+    OneProductComponent,
+    QuntityComponent
   ],
   imports: [CommonModule, AdminRoutingModule, NgbModule, HttpClientModule],
 })

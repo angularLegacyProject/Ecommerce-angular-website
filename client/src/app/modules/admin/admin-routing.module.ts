@@ -7,7 +7,8 @@ import { FurnitureAdComponent } from '../components/furniture-ad/furniture-ad.co
 import { HomeComponent } from '../components/home/home.component';
 import { MenWComponent } from '../components/men-w/men-w.component';
 import { MobileComponent } from '../components/mobile/mobile.component';
-import { OrdresComponent } from '../components/ordres/ordres.component';
+// import { OrdresComponent } from '../components/ordres/ordres.component';
+import { AllOrdresComponent } from '../components/seeordres/all-ordres/all-ordres.component';
 import { UpdateProductComponent } from '../components/update-product/update-product.component';
 import { WomenWComponent } from '../components/women-w/women-w.component';
 
@@ -24,7 +25,7 @@ const routes: Routes = [
       { path: 'homeAndDecor', component: DecorAdComponent },
       { path: 'menWatches', component: MenWComponent },
       { path: 'womenWatches', component: WomenWComponent },
-      { path: 'allOrdres', component: OrdresComponent },
+      { path: 'allOrdres', component: AllOrdresComponent },
       { path: '', redirectTo: '/admin', pathMatch: 'full' },
     ],
   },
