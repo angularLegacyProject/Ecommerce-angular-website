@@ -15,32 +15,33 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { SignupComponent } from './signup/signup.component';
 import { WWatchesComponent } from './w-watches/w-watches.component';
+import { MyProfileComponent } from './my-profile/my-profile.component';
 
 const routes: Routes = [
-   {path:"",component:HomeComponent},
-   {path:"allProduct",component:AllProductsComponent},
-   {path:"computer",component:ComputerComponent},
-   {path:"mobile",component:PhonesComponent},
-   {path:"furniture",component:FurnitureComponent},
-   {path:"homeDecor",component:HomeDecorComponent},
-   {path:"menWatches",component:MWatchesComponent},
-   {path:"womenWatches",component:WWatchesComponent},
-   {path:"login",component:LoginComponent},
-   {path:"signup",component:SignupComponent},
-   {path:"shoppingCart",component:ShoppingCartComponent},
-   {path:"product/:id",component:ProductDetailsComponent},
-   // {path:"admin",component:AdminLayoutComponent}
-   {
+  { path: '', component: HomeComponent },
+  { path: 'allProduct', component: AllProductsComponent },
+  { path: 'computer', component: ComputerComponent },
+  { path: 'mobile', component: PhonesComponent },
+  { path: 'furniture', component: FurnitureComponent },
+  { path: 'homeDecor', component: HomeDecorComponent },
+  { path: 'menWatches', component: MWatchesComponent },
+  { path: 'womenWatches', component: WWatchesComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'shoppingCart', component: ShoppingCartComponent },
+  { path: 'product/:id', component: ProductDetailsComponent },
+  { path: 'user/myprofile', component: MyProfileComponent },
+  // {path:"admin",component:AdminLayoutComponent}
+  {
     path: 'admin',
     canActivate: [],
     loadChildren: () =>
       import('./modules/admin/admin.module').then((m) => m.AdminModule),
-  }
-
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
