@@ -23,9 +23,11 @@ export class FurnitureAdComponent implements OnInit {
     this.http.delete(`http://localhost:5000/product/${id}`).subscribe({
       error: (error) => {
         console.error('There was an error!', error);
+
       },
     });
-    this.ngOnInit();
+    // this.ngOnInit();
+    location.reload()
   }
 
 }
