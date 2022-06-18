@@ -28,6 +28,7 @@ import { MWatchesComponent } from './m-watches/m-watches.component';
 import { WWatchesComponent } from './w-watches/w-watches.component';
 import { PhonesComponent } from './phones/phones.component';
 import { MobileComponent } from './modules/components/mobile/mobile.component';
+import { ProfileComponent } from './profile/profile.component';
 
 // import { AuthInterceptor } from '../auth.interceptor'
 @NgModule({
@@ -54,6 +55,7 @@ import { MobileComponent } from './modules/components/mobile/mobile.component';
     WWatchesComponent,
     PhonesComponent,
     MobileComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

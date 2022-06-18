@@ -9,6 +9,7 @@
     <input type="text" (keyup)="getCategory($event)" />
     <span data-placeholder="category"></span>
   </div>
+
   <div class="input-box">
     <input type="text" (keyup)="getSousCategory($event)" />
     <span data-placeholder="s_category"></span>
@@ -25,12 +26,8 @@
     <input type="text" (keyup)="getDescription($event)" />
     <span data-placeholder="description"></span>
   </div>
-
-  <!-- <label> <input type="checkbox" name="remember" /> Remember me </label> -->
-
   <button (click)="createProduct()" type="submit" class="login-btn">
     Add product
   </button>
-
   <div class="bottom-links"></div>
 </form>
