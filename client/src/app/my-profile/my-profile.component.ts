@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
+import { FormsModule, NgForm } from '@angular/forms';
+import { UpdateService } from '../services/update.service';
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-my-profile',
@@ -7,19 +10,32 @@ import { AuthService } from '../services/auth.service';
   styleUrls: ['./my-profile.component.css'],
 })
 export class MyProfileComponent implements OnInit {
-  username: any;
-  email: any;
-  phonenumber: any;
-  adress: any;
+  USERname: any;
+  eMail: any;
+  phonenumberr: any;
+  Adress: any;
   fullname: any;
+  id: any;
+  profilePic: any;
 
-  constructor(private auth: AuthService) {}
+  constructor(
+    private auth: AuthService,
+    private UpdateService: UpdateService
+  ) {}
 
   ngOnInit(): void {
-    this.username = this.auth.getusername();
-    this.email = this.auth.getemail();
-    this.phonenumber = this.auth.getphonenumber();
-    this.adress = this.auth.getuseradress();
+    this.USERname = this.auth.getusername();
+    console.log(this.USERname);
+    this.eMail = this.auth.getemail();
+    this.phonenumberr = this.auth.getphonenumber();
+    this.Adress = this.auth.getuseradress();
     this.fullname = this.auth.getuserfullname();
+    this.id = this.auth.getuserid();
+    this.profilePic = this.auth.getuserPic();
+  }
+
+  update(inp: NgForm) {
+    let data = inp.value;
+    this.UpdateService.update(this.id, data);
   }
 }

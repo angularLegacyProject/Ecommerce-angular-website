@@ -28,8 +28,6 @@ export class AuthService {
 
   saveSession(token: any, islogged: any) {
     const decodedToken = this.helper.decodeToken(token);
-    console.log(decodedToken);
-
     localStorage.setItem('token', token);
     localStorage.setItem('decodedToken', decodedToken);
     localStorage.setItem('cartShop', JSON.stringify(this.products)); 
@@ -41,9 +39,13 @@ export class AuthService {
   }
   getusername() {
     let token: any = localStorage.getItem('token');
-    // console.log(token);
+
     let decodedToken = this.helper.decodeToken(token);
-    if (decodedToken) return decodedToken.username;
+
+    if (decodedToken) {
+      return decodedToken.username;
+    }
+
   }
   getemail() {
     let token: any = localStorage.getItem('token');
@@ -69,6 +71,18 @@ export class AuthService {
     console.log(decodedToken.fullname);
 
     return decodedToken.fullname;
+  }
+  getuserPic() {
+    let token: any = localStorage.getItem('token');
+
+    let decodedToken = this.helper.decodeToken(token);
+    return decodedToken.profilepic;
+  }
+  getuserid() {
+    let token: any = localStorage.getItem('token');
+    let decodedToken = this.helper.decodeToken(token);
+    console.log(decodedToken);
+    return decodedToken.id;
   }
 
   logout() {
