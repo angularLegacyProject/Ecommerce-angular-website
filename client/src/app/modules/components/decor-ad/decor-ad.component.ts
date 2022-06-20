@@ -20,9 +20,8 @@ export class DecorAdComponent implements OnInit {
   deleteitem(id: any) {
     this.http.delete(`http://localhost:5000/product/${id}`).subscribe({
       error: (error) => {
-        console.error('There was an error!', error);
       },
     });
-    this.ngOnInit();
+    location.reload()
   }
 }

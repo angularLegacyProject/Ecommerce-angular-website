@@ -1,5 +1,5 @@
 .navbar-light{
-    background: #268cfa ;
+    background: #7a7a7a ;
     
     /* background: linear-gradient(to right, #ffffcc 0%, #66ffff 100%);     */
 }
@@ -42,7 +42,7 @@
 
 
 .navbar1 a:hover, .dropdown1:hover .dropbtn {
-    background-color:#5489bb;
+    background-color:#9d9fa2;
     color: #000;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .dropdown-content1 .header {
-    background: linear-gradient(#6794be,#fff);
+    background: linear-gradient(#8e8f90,#fff);
     padding: 1%;;
     color: black;
 }

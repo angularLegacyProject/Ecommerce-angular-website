@@ -14,7 +14,5 @@ export class AllOrdresComponent implements OnInit {
       .get('http://localhost:5000/cart')
       .subscribe((res: any) => (this.allCarts = res));
   }
-  get() {
-    console.log(this.allCarts);
-  }
+
 }

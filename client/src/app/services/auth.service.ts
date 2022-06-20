@@ -9,6 +9,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 })
 export class AuthService {
   helper = new JwtHelperService();
+  products = [];
 
   constructor(private http: HttpClient, private route: Router) {}
   login(data: any) {
@@ -17,11 +18,19 @@ export class AuthService {
       data
     );
   }
+  singup(data: any) {
+    this.http.post<any>('http://localhost:5000/user/signup', data).subscribe({
+      error: (error) => {
+        console.error('There was an error!', error);
+      },
+    });
+  }
 
   saveSession(token: any, islogged: any) {
     const decodedToken = this.helper.decodeToken(token);
     localStorage.setItem('token', token);
     localStorage.setItem('decodedToken', decodedToken);
+    localStorage.setItem('cartShop', JSON.stringify(this.products)); 
     if (decodedToken.type === 'admin') {
       this.route.navigate(['admin']);
     } else {
@@ -32,9 +41,11 @@ export class AuthService {
     let token: any = localStorage.getItem('token');
 
     let decodedToken = this.helper.decodeToken(token);
+
     if (decodedToken) {
       return decodedToken.username;
     }
+
   }
   getemail() {
     let token: any = localStorage.getItem('token');
@@ -78,4 +89,5 @@ export class AuthService {
     localStorage.clear();
     this.route.navigate(['']);
   }
+  
 }

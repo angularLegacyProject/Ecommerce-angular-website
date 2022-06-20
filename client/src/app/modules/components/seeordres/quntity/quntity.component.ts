@@ -8,7 +8,5 @@ import { Component, OnInit, Input } from '@angular/core';
 export class QuntityComponent implements OnInit {
   constructor() {}
   @Input() prod: any;
-  ngOnInit(): void {
-    console.log(this.prod, 'quna');
-  }
+  ngOnInit(): void {}
 }

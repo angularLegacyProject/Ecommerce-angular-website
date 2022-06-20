@@ -31,6 +31,7 @@ const routes: Routes = [
   { path: 'shoppingCart', component: ShoppingCartComponent },
   { path: 'product/:id', component: ProductDetailsComponent },
   { path: 'user/myprofile', component: MyProfileComponent },
+  {path:'shoppingCart',component:ShoppingCartComponent},
   // {path:"admin",component:AdminLayoutComponent}
   {
     path: 'admin',
