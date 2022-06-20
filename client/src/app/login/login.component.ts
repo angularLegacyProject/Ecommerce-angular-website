@@ -23,6 +23,5 @@ export class LoginComponent implements OnInit {
     this.authService.login(data).subscribe((user: any) => {
       this.authService.saveSession(user.token, user.status);
     });
-    console.log(this.authService.getusername());
   }
 }

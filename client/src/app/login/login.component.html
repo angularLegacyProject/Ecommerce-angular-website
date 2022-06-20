@@ -1,54 +1,54 @@
 <app-nav-bar></app-nav-bar>
-<div class="wrapper container-fluid">
-  <form class="form-signin" #inp="ngForm" (ngSubmit)="auth(inp)">
-    <h2 class="form-signin-heading">Please login</h2>
-    <input
-      type="text"
-      class="form-control"
-      #username="ngModel"
-      ngModel
-      name="email"
-      placeholder="Email Address"
-      required
-      minlength="3"
-    />
-    <!-- <div class="alert alert-danger">
-      <div>Email Required</div>
-      <div></div>
-    </div> -->
-    <input
-      type="password"
-      class="form-control"
-      #password="ngModel"
-      ngModel
-      name="password"
-      placeholder="Password"
-      required
-    />
-    <!-- <div class="alert alert-danger">
-      <div>Password Required</div>
-    </div> -->
-    <label class="checkbox">
-      <input
-        type="checkbox"
-        value="remember-me"
-        id="rememberMe"
-        name="rememberMe"
-      />
-      Remember me
-    </label>
-    <button class="btn btn-lg btn-success btn-block" type="submit">
-      Login
-    </button>
-    <hr />
-    <button class="btn btn-danger">
-      Login With <i class="fa fa-google"></i>
-    </button>
-    &nbsp;
-    <button class="btn btn-primary">
-      Login With <i class="fa fa-facebook-f"></i>
-    </button>
-    <hr />
-    <p>Don't have Account,Signup <a routerLink="/signup">Here</a></p>
-  </form>
+
+<div class="signup__container">
+  <div class="container__child signup__thumbnail">
+    <div class="thumbnail__logo"></div>
+    <div class="thumbnail__content text-center">
+      <h1 class="heading--primary">Welcome to Shopium</h1>
+      <h2 class="heading--secondary">Start shopping now</h2>
+    </div>
+    <div class="thumbnail__links"></div>
+    <div class="signup__overlay"></div>
+  </div>
+  <div class="container__child signup__form">
+    <form action="#" #inp="ngForm" (ngSubmit)="auth(inp)">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="text"
+          class="form-control"
+          #username="ngModel"
+          ngModel
+          name="email"
+          placeholder="Email Address"
+          required
+          minlength="3"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          #password="ngModel"
+          ngModel
+          name="password"
+          placeholder="Password"
+          required
+        />
+      </div>
+
+      <div class="m-t-lg">
+        <ul class="list-inline">
+          <li>
+            <input class="btn btn--form" type="submit" value="Login" />
+          </li>
+          <li>
+            <a class="signup__link" href="#">I am already a member</a>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </div>
 </div>
