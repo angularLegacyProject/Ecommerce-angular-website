@@ -27,6 +27,7 @@ export class MobileComponent implements OnInit {
       },
     });
     this.ngOnInit();
+    location.reload()
   }
   getItemDetail(p: any) {
     this.itemDetail = p;

@@ -13,7 +13,13 @@ export class OneOrdreComponent implements OnInit {
   ngOnInit(): void {
     this.http
       .get(`http://localhost:5000/user/${this.cart.userId}`)
-      .subscribe((res) => this.user=res);
-    console.log(this.cart.userId, 'from one ordre');
+      .subscribe((res) => (this.user = res));
+  }
+  confirmOrdres() {
+    this.http.delete(`http://localhost:5000/cart/${this.cart._id}`).subscribe({
+      error: (error) => {
+      },
+    });
+    location.reload();
   }
 }

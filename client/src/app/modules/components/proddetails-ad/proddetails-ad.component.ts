@@ -1,26 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 // import {AllProducts} from "../all-products/all-products.component"
-import { ProductServiceService } from '../product-service.service';
+
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
-import { AuthService } from '../services/auth.service';
-import { BuyService } from '../services/buy.service';
-
+import { ProductServiceService } from 'src/app/product-service.service';
 @Component({
-  selector: 'app-product-details',
-  templateUrl: './product-details.component.html',
-  styleUrls: ['./product-details.component.css'],
+  selector: 'app-proddetails-ad',
+  templateUrl: './proddetails-ad.component.html',
+  styleUrls: ['./proddetails-ad.component.css'],
 })
-export class ProductDetailsComponent implements OnInit {
+export class ProddetailsAdComponent implements OnInit {
   public oneProd: any;
   public id: any;
-
   constructor(
     private getOneProduct: ProductServiceService,
     private http: HttpClient,
-    private activatedRoute: ActivatedRoute,
-    private auth: AuthService,
-    private buy: BuyService
+    private activatedRoute: ActivatedRoute
   ) {
     this.activatedRoute.paramMap.subscribe((params) => {
       this.id = params.get('id');
@@ -38,11 +33,5 @@ http://localhost:5000/product/${this.id}`
       });
   }
 
-  ngOnInit(): void {
-    console.log(this.buy.array);
-    // this.buy.addItem(this.oneProd);
-  }
-  get(obj:any) {
-    this.buy.addItem(obj);
-  }
+  ngOnInit(): void {}
 }

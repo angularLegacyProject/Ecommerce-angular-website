@@ -48,5 +48,6 @@ export class AddProductComponent implements OnInit {
           console.error('There was an error!', error);
         },
       });
+      location.reload()
   }
 }

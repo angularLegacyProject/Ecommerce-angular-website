@@ -60,4 +60,9 @@
     background-color: #ebf1fe;
     color: #2a7ade;
   }
+  .btn{
+    margin-left: 50rem;
+    background: linear-gradient(70deg,#302f2f,#6c7070,#d7dbde);
+
+  }
   

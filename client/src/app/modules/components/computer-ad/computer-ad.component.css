@@ -11,13 +11,16 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #20201f;
+  background: #ffffff;
+
 }
 .row {
   width: 1450px;
   row-gap: 35px;
   margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-right: 10rem;
+    
 }
 
 div {
@@ -29,9 +32,10 @@ div {
   position: relative;
   width: 350px;
   height: 550px;
-  background: #01030a;
+  background: #333;
   border-radius: 20px;
   overflow: hidden;
+  margin-right: 1rem;
  
 }
 
@@ -117,8 +121,9 @@ div {
   margin-top: 15px;
   color: #0e0c22;
   text-decoration: none;
-  background: #c2efef;
   border-radius: 30px;
+  background: linear-gradient(70deg,#4085c5,#6c7070,#d7dbde);
+
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: 0.5s;

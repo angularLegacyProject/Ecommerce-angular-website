@@ -11,8 +11,9 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #20201f;
+  background: #333;
 }
+
 .row {
   width: 1450px;
   row-gap: 35px;
@@ -29,7 +30,7 @@ div {
   position: relative;
   width: 350px;
   height: 550px;
-  background: #01030a;
+  background: #333;
   border-radius: 20px;
   overflow: hidden;
  

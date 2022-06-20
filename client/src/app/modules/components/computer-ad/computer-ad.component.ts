@@ -26,5 +26,6 @@ export class ComputerAdComponent implements OnInit {
       },
     });
     this.ngOnInit();
+    location.reload()
   }
 }

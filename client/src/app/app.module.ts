@@ -30,6 +30,7 @@ import { PhonesComponent } from './phones/phones.component';
 import { MobileComponent } from './modules/components/mobile/mobile.component';
 
 import { MyProfileComponent } from './my-profile/my-profile.component';
+import { ProddetailsAdComponent } from './modules/components/proddetails-ad/proddetails-ad.component';
 
 
 
@@ -61,6 +62,7 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
     MobileComponent,
 
     MyProfileComponent,
+      ProddetailsAdComponent,
     
 
    
