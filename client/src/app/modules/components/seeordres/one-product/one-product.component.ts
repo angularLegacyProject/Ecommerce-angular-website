@@ -13,7 +13,7 @@ export class OneProductComponent implements OnInit {
   ngOnInit(): void {
     this.http
       .get(`http://localhost:5000/product/${this.prod.productId}`)
-      .subscribe((res: any) => this.product=res.data);
-      console.log(this.prod,"from one prod")
+      .subscribe((res: any) => (this.product = res.data));
   }
+
 }

@@ -1,6 +1,5 @@
 .navbar-light{
-    background: #268cfa ;
-    
+    background: #7a7a7a ;
     /* background: linear-gradient(to right, #ffffcc 0%, #66ffff 100%);     */
 }
 .search_input{
@@ -11,7 +10,7 @@
 }
 .navbar1 {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(0, 0, 0);
     /* font-family: Arial, Helvetica, sans-serif; */
 }
 
@@ -42,7 +41,7 @@
 
 
 .navbar1 a:hover, .dropdown1:hover .dropbtn {
-    background-color:#5489bb;
+    background-color:#9d9fa2;
     color: #000;
 }
 
@@ -59,7 +58,7 @@
 }
 
 .dropdown-content1 .header {
-    background: linear-gradient(#6794be,#fff);
+    background: linear-gradient(#9d9fa2,#fff);
     padding: 1%;;
     color: black;
 }

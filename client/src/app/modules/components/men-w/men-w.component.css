@@ -11,8 +11,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #20201f;
+  background: #333;
 }
+/* .col{
+  margin-left: 10rem;
+} */
 .row {
   width: 1450px;
   row-gap: 35px;
@@ -22,14 +25,15 @@ body {
 
 div {
   column-gap: 35px;
+  
 }
 
 .card {
  
   position: relative;
-  width: 350px;
-  height: 550px;
-  background: #01030a;
+  width: 300px;
+  height: 450px;
+  background: #333;
   border-radius: 20px;
   overflow: hidden;
  

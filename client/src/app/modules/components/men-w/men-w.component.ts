@@ -26,6 +26,7 @@ export class MenWComponent implements OnInit {
       },
     });
     this.ngOnInit();
+    location.reload()
   }
 
 }
